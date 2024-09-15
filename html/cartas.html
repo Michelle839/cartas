@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>CARTAS</title>
+    <link rel="stylesheet" href="../css/cartas.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap");
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="../img/imglogin.png" alt="" />
+    </header>
+    <div class="container1">
+      <div class="cards">
+        <img src="../img/1.png" alt="" data-carta="1" />
+        <img src="../img/2.png" alt="" data-carta="2" />
+        <img src="../img/3.png" alt="" data-carta="3" />
+        <img src="../img/4.png" alt="" data-carta="4" />
+        <img src="../img/5.png" alt="" data-carta="5" />
+        <img src="../img/6.png" alt="" data-carta="6" />
+        <img src="../img/7.png" alt="" data-carta="7" />
+        <img src="../img/8.png" alt="" data-carta="8" />
+        <img src="../img/9.png" alt="" data-carta="9" />
+        <img src="../img/10.png" alt="" data-carta="10" />
+        <img src="../img/11.png" alt="" data-carta="11" />
+        <img src="../img/12.png" alt="" data-carta="12" />
+        <img src="../img/13.png" alt="" data-carta="13" />
+      </div>
+      <div class="table">
+        <h1>Lista de cartas</h1>
+        <table class="table table-bordered" id="cardTable">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Carta</th>
+              <th scope="col">Cantidad</th>
+            </tr>
+          </thead>
+          <tbody id="listado"></tbody>
+        </table>
+        <h1>Registro de Cartas</h1>
+        <div class="form-container">
+          <form>
+            <div class="form-group">
+              <label for="numero">Número</label>
+              <input
+                type="text"
+                id="numero"
+                class="form-control"
+                placeholder="Ingresa el número de la carta"
+              />
+              <label for="descripcionCarta">Carta</label>
+              <input
+                type="text"
+                id="descripcionCarta"
+                class="form-control"
+                placeholder="Descripcion de la carta"
+              />
+            </div>
+
+            <button type="button" id="guardar" class="btn btn-danger btn-block">
+              Guardar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/scripts.js"></script>
+  </body>
+</html>
