@@ -45,6 +45,15 @@ $(".cards img").click(function () {
 function guardarCarta() {
   var numero = document.querySelector("#numero").value;
   var descripcionCarta = document.querySelector("#descripcionCarta").value;
+  if (numero === "" || descripcionCarta === "") {
+    alert("Por favor, completa todos los campos antes de guardar.");
+    return;
+  }
+
+  if (numero > 13 || numero < 1) {
+    alert("Error, la carta no se encuentra en el tablero.");
+    return;
+  }
   var datos = localStorage.getItem("datos");
   datos = JSON.parse(datos);
   var dato = {
